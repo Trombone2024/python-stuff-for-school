@@ -17,26 +17,26 @@ print('multiplication')
 print('division')
 
 while True:
-    choice=imput('Choose (1,2,3,4):')
+    choice=input('Choose (+,-,*,/):')
     
-    if choice in('1','2','3','4'):
-        num1 = float('Type first number: ')
-        num2 = float('Type second number: ')
+    if choice in('+','-','*','/'):
+        num1 = float(input('Type first number: '))
+        num2 = float(input('Type second number: '))
         
-        if choice == '1':
-            print(num1, '+', num2 '=', add(num1, num2))
+        if choice == '+':
+            print(num1, '+', num2, '=', add(num1, num2))
             
-        elif choice == '2':
+        elif choice == '-':
             print(num1, '-', num2, '=', subtract(num1, num2))
             
-        elif choice == '3':
+        elif choice == '*':
             print(num1, '*', num2, '=', multiply(num1, num2))
             
-        elif choice == '4':
+        elif choice == '/':
             print(num1, '/', num2, '=', divide(num1, num2))
             
-        next_math = imput('Want to do another one? (y/n)')
-        if next_math = 'n':
+        next_calculation = input('Want to do another one? (yes/no)')
+        if next_calculation == 'no':
             break
         
     else:
